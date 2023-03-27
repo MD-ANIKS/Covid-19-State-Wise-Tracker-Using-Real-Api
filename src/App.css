@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 65.75%;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #464444;
+  margin: 2rem 0;
+}
+
+.heading span {
+  color: black;
+  font-weight: 500;
+}
+
+.dashboard-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-area .dashboard-area-wrapper {
+  margin: 0% 9%;
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+  -moz-border-radius: 5px; /* FF1+ */
+  -webkit-border-radius: 5px; /* Saf3-4 */
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 13px rgba(73, 71, 71, 0.224);
+}
+
+.dashboard-area .dashboard-area-wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  border: 1px solid #d3d3d3;
+}
+
+.dashboard-area table thead tr th {
+  background-color: #333;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.dashboard-area table tbody tr:hover {
+  background-color: #f2f1f1;
+}
+
+.dashboard-area table tbody tr td:hover {
+  background-color: #31d131;
+  color: aliceblue;
+  border: 0.5px solid rgb(12, 12, 12);
+}
+.dashboard-area table tbody tr td:first-child:hover {
+  background-color: #f2f1f1;
+}
+.dashboard-area table tbody tr td:nth-child(4):hover {
+  background-color: #fe0000;
+  color: aliceblue;
+  border: 0.5px solid rgb(12, 12, 12);
+}
+
+.dashboard-area table tbody tr:first-child td {
+  border-top: none;
+}
+.dashboard-area table tbody tr td:last-child {
+  border-right: none;
+}
+
+.dashboard-area th,
+td {
+  padding: 10px 8px 10px;
+}
+
+td,
+th {
+  position: relative;
+}
+
+table thead tr th {
+  z-index: 99;
+}
+
+table th:hover::after,
+table td:hover::after {
+  content: "";
+  position: absolute;
+  top: -5000px;
+  left: 0;
+  width: 100%;
+  height: 5000px;
+  z-index: -1;
+  background: #f0ebebec;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.4rem;
+  background-color: #d3d3d396;
+  color: rgb(88, 82, 82);
+  font-weight: 300;
+  color: #464444;
+}
